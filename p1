@@ -1,0 +1,31 @@
+# include <iostream>
+# include <cstdlib>
+
+using namespace std;
+
+int reverse(int);
+
+int reverse (int a)
+{
+    if (a<10)
+    
+        return a;
+    
+    else
+    
+        cout<< a % 10;
+        return reverse (a/10);
+}
+    
+
+
+int main()
+{
+    int number;
+    int i=2;
+    cout<<" Enter and integer: "<<endl;
+    cin>> number;
+    cout<<"Integer in reverse order are: "<<reverse(number)<<endl;
+    
+}
+
